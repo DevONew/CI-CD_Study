@@ -17,6 +17,8 @@ jobs:
           
       - name: 의존성(라이브러리) 설치
         run: npm ci
+        working-directory: nextjs-app
 
       - name: 테스트 실행하기
         run: npm run test
+        working-directory: nextjs-app
